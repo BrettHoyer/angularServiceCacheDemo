@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='pubsub'>
+<head>
+	<title>PubSub</title>
+</head>
+<body>
+<a ui-sref="main">Main</a>
+<a ui-sref="secondary">Secondary</a>
+<div ui-view></div>
+<script src='vendor/angular.js' type="text/javascript"></script>
+<script src='vendor/angular-ui-router.js' type="text/javascript"></script>
+<script src='scripts/config.js' type="text/javascript"></script>
+<!-- controllers -->
+<script src='scripts/controllers/mainController.js' type="text/javascript"></script>
+<script src='scripts/controllers/secondaryController.js' type="text/javascript"></script>
+<!-- services -->
+<script src='scripts/services/dataService.js' type="text/javascript"></script>
+<script src='scripts/services/apiService.js' type="text/javascript"></script>
+</body>
+</html>

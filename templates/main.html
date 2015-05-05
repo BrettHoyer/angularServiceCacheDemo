@@ -1,0 +1,18 @@
+<h1>Main Template</h1>
+
+<select ng-model='subRedditSelection' ng-change='changedSubReddit(subRedditSelection.name)' ng-options='subReddit.name for subReddit in subReddits'></select>
+
+<ul>
+	<li ng-repeat='story in redditData'>{{story}}</li>
+</ul>
+
+<ul>
+	<li ng-repeat='message in messageList'>{{message.text}}</li>
+</ul>
+
+<form ng-submit='createMessage(message)'>
+	<input	type='text' ng-model='message'/>
+</form>
+
+
+<div ui-view='secondary'></div>
